@@ -6,14 +6,13 @@
 
 <title>SERVITEC24H | Servicio Técnico y Mantenimiento</title>
 
-<meta name="description" content="SERVITEC24H. Servicio técnico, mantenimiento y asistencia inteligente para empresas, industrias, comercios, instalaciones y particulares.">
+<meta name="description" content="SERVITEC24H. Servicio técnico, mantenimiento y asistencia inteligente para empresas, industrias, comercios, instalaciones y particulares. Base en Castellón. Cobertura nacional.">
 
 <style>
-
 *{
-    box-sizing:border-box;
     margin:0;
     padding:0;
+    box-sizing:border-box;
 }
 
 html{
@@ -22,14 +21,19 @@ html{
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#060a10;
+    background:#05080d;
     color:#ffffff;
     line-height:1.6;
 }
 
 a{
-    text-decoration:none;
     color:inherit;
+    text-decoration:none;
+}
+
+.container{
+    width:min(1180px, 92%);
+    margin:auto;
 }
 
 /* HEADER */
@@ -38,96 +42,86 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
-    background:rgba(6,10,16,0.92);
+    background:rgba(5,8,13,.94);
     backdrop-filter:blur(12px);
-    border-bottom:1px solid rgba(0,174,255,0.15);
+    border-bottom:1px solid rgba(0,183,255,.18);
 }
 
 .nav{
-    max-width:1200px;
-    margin:auto;
-    padding:18px 25px;
+    min-height:78px;
     display:flex;
-    justify-content:space-between;
     align-items:center;
+    justify-content:space-between;
+    gap:25px;
 }
 
 .logo{
-    font-size:30px;
+    font-size:28px;
     font-weight:900;
-    letter-spacing:-1px;
+    letter-spacing:1px;
 }
 
 .logo span{
     color:#00b7ff;
 }
 
-.nav-phone{
+.phone{
+    color:#ffffff;
+    font-weight:700;
+}
+
+.phone:hover{
     color:#00b7ff;
-    font-weight:bold;
 }
 
 /* HERO */
 
 .hero{
-    min-height:90vh;
-    display:flex;
-    align-items:center;
+    padding:95px 0 70px;
     background:
-    radial-gradient(circle at 80% 20%, rgba(0,183,255,0.20), transparent 35%),
-    linear-gradient(135deg,#060a10,#0a1422);
+        radial-gradient(circle at 80% 20%, rgba(0,183,255,.16), transparent 35%),
+        radial-gradient(circle at 20% 80%, rgba(0,183,255,.08), transparent 30%),
+        #05080d;
 }
 
 .hero-content{
-    max-width:1200px;
-    width:100%;
-    margin:auto;
-    padding:90px 25px;
+    max-width:900px;
 }
 
-.tag{
+.badge{
     display:inline-block;
     padding:8px 15px;
-    border:1px solid rgba(0,183,255,0.4);
-    border-radius:50px;
+    border:1px solid rgba(0,183,255,.45);
+    border-radius:30px;
     color:#00b7ff;
     font-size:14px;
-    font-weight:bold;
+    font-weight:700;
     margin-bottom:25px;
 }
 
-.hero h1{
-    font-size:clamp(60px,10vw,130px);
-    line-height:.9;
-    letter-spacing:-6px;
-    margin-bottom:30px;
+h1{
+    font-size:clamp(42px,7vw,76px);
+    line-height:1.02;
+    letter-spacing:-2px;
+    margin-bottom:25px;
 }
 
-.hero h1 span{
+h1 span{
     color:#00b7ff;
-}
-
-.hero h2{
-    font-size:clamp(30px,5vw,58px);
-    line-height:1.05;
-    max-width:900px;
-    margin-bottom:25px;
 }
 
 .hero-text{
-    color:#aebccc;
-    font-size:20px;
-    max-width:750px;
+    max-width:760px;
+    font-size:21px;
+    color:#cbd5df;
     margin-bottom:15px;
 }
 
-.coverage{
-    color:#ffffff;
-    font-weight:bold;
-    margin-bottom:35px;
+.location{
+    color:#00b7ff;
+    font-weight:700;
+    margin-bottom:32px;
 }
-
-/* BUTTONS */
 
 .buttons{
     display:flex;
@@ -136,48 +130,62 @@ header{
 }
 
 .btn{
-    display:inline-block;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
     padding:15px 24px;
     border-radius:10px;
-    font-weight:bold;
+    font-weight:800;
+    border:1px solid #00b7ff;
     transition:.25s;
 }
 
 .btn-primary{
-    background:#00aef5;
-    color:#031019;
+    background:#00b7ff;
+    color:#031018;
 }
 
 .btn-primary:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 30px rgba(0,174,245,.3);
+    transform:translateY(-2px);
+    box-shadow:0 10px 30px rgba(0,183,255,.25);
 }
 
-.btn-outline{
-    border:1px solid #00aef5;
+.btn-secondary{
+    background:transparent;
     color:#ffffff;
 }
 
-.btn-outline:hover{
-    background:#00aef5;
-    color:#031019;
+.btn-secondary:hover{
+    background:rgba(0,183,255,.1);
 }
 
-/* SECTIONS */
+/* IMAGEN FURGONETA */
+
+.hero-visual{
+    margin-top:55px;
+    border:1px solid rgba(0,183,255,.35);
+    border-radius:24px;
+    overflow:hidden;
+    background:#080d14;
+    box-shadow:0 30px 80px rgba(0,183,255,.14);
+}
+
+.hero-visual img{
+    width:100%;
+    height:auto;
+    display:block;
+}
+
+/* SECCIONES */
 
 section{
-    padding:90px 25px;
-}
-
-.container{
-    max-width:1200px;
-    margin:auto;
+    padding:90px 0;
 }
 
 .section-title{
-    font-size:clamp(38px,6vw,64px);
-    line-height:1;
+    font-size:42px;
     margin-bottom:15px;
+    letter-spacing:-1px;
 }
 
 .section-title span{
@@ -185,200 +193,232 @@ section{
 }
 
 .section-subtitle{
-    color:#9eacbb;
-    font-size:18px;
+    color:#aeb9c5;
     max-width:750px;
-    margin-bottom:50px;
+    font-size:18px;
+    margin-bottom:45px;
 }
 
-/* SERVICES */
+/* SERVICIOS */
 
 .services{
-    background:#080e17;
+    background:#080d14;
 }
 
-.service-grid{
+.services-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(5,1fr);
     gap:16px;
 }
 
 .service{
-    background:linear-gradient(145deg,#0d1724,#09111c);
-    border:1px solid rgba(255,255,255,.07);
-    padding:28px;
-    border-radius:16px;
+    padding:24px 18px;
+    min-height:120px;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:15px;
+    background:linear-gradient(145deg,#0c131c,#070b11);
     transition:.25s;
 }
 
 .service:hover{
     transform:translateY(-5px);
-    border-color:rgba(0,183,255,.5);
+    border-color:rgba(0,183,255,.45);
+    box-shadow:0 15px 35px rgba(0,0,0,.3);
 }
 
-.service-number{
-    color:#00b7ff;
-    font-size:14px;
-    font-weight:bold;
+.service-icon{
+    font-size:27px;
+    margin-bottom:10px;
 }
 
 .service h3{
-    margin-top:10px;
-    font-size:21px;
+    font-size:17px;
 }
 
 /* IA */
 
 .ia{
     background:
-    radial-gradient(circle at 20% 50%,rgba(0,183,255,.18),transparent 35%),
-    #050a11;
+        radial-gradient(circle at 80% 30%,rgba(0,183,255,.12),transparent 35%),
+        #05080d;
 }
 
 .ia-box{
     border:1px solid rgba(0,183,255,.35);
-    background:linear-gradient(145deg,#091827,#07101a);
-    border-radius:25px;
-    padding:55px;
-    box-shadow:0 0 60px rgba(0,183,255,.08);
+    border-radius:24px;
+    padding:50px;
+    background:linear-gradient(135deg,#0b121b,#071018);
 }
 
-.ia-badge{
+.ia-label{
     color:#00b7ff;
-    font-weight:bold;
+    font-weight:900;
     letter-spacing:2px;
-    margin-bottom:20px;
+    margin-bottom:15px;
 }
 
 .ia-box h2{
-    font-size:clamp(40px,6vw,70px);
-    line-height:1;
-    margin-bottom:25px;
+    font-size:44px;
+    margin-bottom:20px;
 }
 
 .ia-box p{
-    color:#aebccc;
-    font-size:19px;
+    color:#c1ccd6;
+    font-size:18px;
     max-width:800px;
-    margin-bottom:30px;
+    margin-bottom:28px;
 }
 
-.ia-list{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-    gap:15px;
-    margin-bottom:35px;
+/* COBERTURA */
+
+.coverage{
+    background:#080d14;
 }
 
-.ia-item{
-    padding:18px;
-    border-left:3px solid #00b7ff;
-    background:rgba(255,255,255,.03);
-}
-
-/* CLIENTES */
-
-.clients{
-    background:#080e17;
-}
-
-.client-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-    gap:15px;
-}
-
-.client{
-    text-align:center;
-    padding:25px;
-    border:1px solid rgba(255,255,255,.08);
-    border-radius:14px;
-    color:#dce5ee;
-}
-
-/* CONTACT */
-
-.contact{
-    background:
-    radial-gradient(circle at 80% 30%,rgba(0,183,255,.15),transparent 35%),
-    #060a10;
-}
-
-.contact-box{
+.coverage-box{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:30px;
+    gap:35px;
+    align-items:center;
 }
 
-.contact-card{
-    padding:30px;
-    background:#0b1420;
+.coverage-card{
+    padding:40px;
+    border-radius:20px;
     border:1px solid rgba(255,255,255,.08);
-    border-radius:18px;
+    background:#05080d;
 }
 
-.contact-card h3{
-    color:#00b7ff;
+.coverage-card h3{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.coverage-card p{
+    color:#b7c1cb;
+}
+
+.coverage-list{
+    margin-top:20px;
+    list-style:none;
+}
+
+.coverage-list li{
     margin-bottom:10px;
 }
 
-.contact-card a{
-    font-size:20px;
-    font-weight:bold;
+.coverage-list li::before{
+    content:"✓";
+    color:#00b7ff;
+    font-weight:900;
+    margin-right:10px;
 }
 
-.contact-card a:hover{
+/* CONTACTO */
+
+.contact{
+    text-align:center;
+}
+
+.contact-box{
+    max-width:850px;
+    margin:auto;
+}
+
+.contact-box h2{
+    font-size:48px;
+    margin-bottom:18px;
+}
+
+.contact-box p{
+    color:#b8c2cc;
+    font-size:19px;
+    margin-bottom:30px;
+}
+
+.contact-info{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+    margin-top:30px;
+}
+
+.contact-item{
+    padding:18px 25px;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:12px;
+    background:#080d14;
+}
+
+.contact-item strong{
+    display:block;
     color:#00b7ff;
+    margin-bottom:5px;
 }
 
 /* FOOTER */
 
 footer{
+    padding:35px 0;
+    border-top:1px solid rgba(255,255,255,.08);
+    background:#030508;
+    color:#7f8a96;
     text-align:center;
-    padding:35px 20px;
-    background:#03060a;
-    color:#7f8b98;
-    border-top:1px solid rgba(255,255,255,.06);
 }
 
-footer strong{
+.footer-logo{
     color:#ffffff;
+    font-size:22px;
+    font-weight:900;
+    margin-bottom:8px;
 }
 
-/* MOBILE */
+.footer-logo span{
+    color:#00b7ff;
+}
 
-@media(max-width:700px){
+/* RESPONSIVE */
 
-    .nav-phone{
-        display:none;
+@media(max-width:900px){
+
+    .services-grid{
+        grid-template-columns:repeat(2,1fr);
     }
 
-    .hero-content{
+    .coverage-box{
+        grid-template-columns:1fr;
+    }
+
+    .hero{
         padding-top:70px;
     }
 
-    .hero h1{
-        letter-spacing:-3px;
+    .ia-box{
+        padding:35px 25px;
+    }
+}
+
+@media(max-width:600px){
+
+    .nav{
+        min-height:68px;
     }
 
-    .hero h2{
-        font-size:34px;
+    .logo{
+        font-size:23px;
+    }
+
+    .phone{
+        font-size:14px;
+    }
+
+    h1{
+        font-size:43px;
     }
 
     .hero-text{
-        font-size:17px;
-    }
-
-    section{
-        padding:65px 20px;
-    }
-
-    .ia-box{
-        padding:30px 22px;
-    }
-
-    .contact-box{
-        grid-template-columns:1fr;
+        font-size:18px;
     }
 
     .buttons{
@@ -386,309 +426,325 @@ footer strong{
     }
 
     .btn{
-        text-align:center;
         width:100%;
     }
-}
 
+    .hero-visual{
+        margin-top:40px;
+        border-radius:16px;
+    }
+
+    section{
+        padding:65px 0;
+    }
+
+    .section-title{
+        font-size:34px;
+    }
+
+    .services-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ia-box h2{
+        font-size:34px;
+    }
+
+    .coverage-card{
+        padding:28px;
+    }
+
+    .contact-box h2{
+        font-size:37px;
+    }
+
+    .contact-info{
+        flex-direction:column;
+    }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <div class="nav">
-        <div class="logo">SERVITEC<span>24H</span></div>
+    <div class="container nav">
+        <a href="#" class="logo">SERVITEC<span>24H</span></a>
 
-        <a class="nav-phone" href="tel:+34604828147">
+        <a class="phone" href="tel:+34604828147">
             +34 604 82 81 47
         </a>
     </div>
 </header>
 
+<main>
+
 <!-- HERO -->
 
 <section class="hero">
+    <div class="container">
 
-<div class="hero-content">
+        <div class="hero-content">
 
-    <div class="tag">
-        SERVICIO TÉCNICO · MANTENIMIENTO · ASISTENCIA INTELIGENTE
+            <div class="badge">
+                SERVICIO TÉCNICO · MANTENIMIENTO · ASISTENCIA INTELIGENTE
+            </div>
+
+            <h1>
+                Tus problemas técnicos.<br>
+                <span>Nuestras soluciones.</span>
+            </h1>
+
+            <p class="hero-text">
+                Servicio técnico y mantenimiento 24 horas para
+                empresas, industrias, comercios, instalaciones y particulares.
+            </p>
+
+            <div class="location">
+                Base en Castellón · Cobertura nacional
+            </div>
+
+            <div class="buttons">
+                <a class="btn btn-primary" href="tel:+34604828147">
+                    Necesito un técnico
+                </a>
+
+                <a class="btn btn-secondary"
+                   href="https://wa.me/34604828147"
+                   target="_blank">
+                    WhatsApp
+                </a>
+
+                <a class="btn btn-secondary" href="#ia">
+                    SERVITEC24H IA
+                </a>
+            </div>
+
+        </div>
+
+        <!-- IMAGEN PRINCIPAL DE LA FURGONETA -->
+
+        <div class="hero-visual">
+            <img
+                src="E343A02E-8283-48B4-AE13-66149108BE84.png"
+                alt="SERVITEC24H - servicio técnico y mantenimiento"
+            >
+        </div>
+
     </div>
-
-    <h1>
-        SERVITEC<span>24H</span>
-    </h1>
-
-    <h2>
-        Tus problemas técnicos.<br>
-        Nuestras soluciones.
-    </h2>
-
-    <p class="hero-text">
-        Servicio técnico y mantenimiento para empresas, industrias,
-        comercios, instalaciones y particulares.
-    </p>
-
-    <p class="coverage">
-        Base en Castellón · Cobertura nacional
-    </p>
-
-    <div class="buttons">
-
-        <a class="btn btn-primary"
-           href="tel:+34604828147">
-            📞 Necesito un técnico
-        </a>
-
-        <a class="btn btn-outline"
-           href="https://wa.me/34604828147">
-            💬 WhatsApp
-        </a>
-
-        <a class="btn btn-outline"
-           href="tel:+34604828147">
-            Llamar ahora
-        </a>
-
-        <a class="btn btn-outline"
-           href="#ia">
-            SERVITEC24H IA
-        </a>
-
-    </div>
-
-</div>
-
 </section>
 
 <!-- SERVICIOS -->
 
-<section class="services">
+<section class="services" id="servicios">
+    <div class="container">
 
-<div class="container">
+        <h2 class="section-title">
+            Soluciones <span>técnicas</span>
+        </h2>
 
-    <h2 class="section-title">
-        Un solo servicio técnico.<br>
-        <span>Todas tus necesidades.</span>
-    </h2>
+        <p class="section-subtitle">
+            Un solo servicio técnico para cubrir las principales
+            necesidades de mantenimiento e intervención.
+        </p>
 
-    <p class="section-subtitle">
-        Soluciones de mantenimiento y asistencia técnica
-        en diferentes especialidades.
-    </p>
+        <div class="services-grid">
 
-    <div class="service-grid">
+            <div class="service">
+                <div class="service-icon">⚡</div>
+                <h3>Electricidad</h3>
+            </div>
 
-        <div class="service">
-            <div class="service-number">01</div>
-            <h3>Electricidad</h3>
+            <div class="service">
+                <div class="service-icon">⚙️</div>
+                <h3>Automatización</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🔌</div>
+                <h3>Electrónica</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🔧</div>
+                <h3>Mecánica</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">💨</div>
+                <h3>Neumática</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">💧</div>
+                <h3>Hidráulica</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🚰</div>
+                <h3>Fontanería</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🔗</div>
+                <h3>Redes industriales</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🛠️</div>
+                <h3>Mantenimiento preventivo</h3>
+            </div>
+
+            <div class="service">
+                <div class="service-icon">🚨</div>
+                <h3>Mantenimiento correctivo</h3>
+            </div>
+
         </div>
-
-        <div class="service">
-            <div class="service-number">02</div>
-            <h3>Automatización</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">03</div>
-            <h3>Electrónica</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">04</div>
-            <h3>Mecánica</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">05</div>
-            <h3>Neumática</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">06</div>
-            <h3>Hidráulica</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">07</div>
-            <h3>Fontanería</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">08</div>
-            <h3>Redes industriales</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">09</div>
-            <h3>Mantenimiento preventivo</h3>
-        </div>
-
-        <div class="service">
-            <div class="service-number">10</div>
-            <h3>Mantenimiento correctivo</h3>
-        </div>
-
     </div>
-
-</div>
-
 </section>
 
 <!-- IA -->
 
 <section class="ia" id="ia">
+    <div class="container">
 
-<div class="container">
+        <div class="ia-box">
 
-    <div class="ia-box">
-
-        <div class="ia-badge">
-            SERVITEC24H IA
-        </div>
-
-        <h2>
-            Asistencia técnica<br>
-            inteligente.
-        </h2>
-
-        <p>
-            Una nueva forma de afrontar problemas técnicos:
-            análisis, orientación y apoyo para encontrar
-            soluciones de forma más rápida y eficiente.
-        </p>
-
-        <div class="ia-list">
-
-            <div class="ia-item">
-                Análisis de averías
+            <div class="ia-label">
+                SERVITEC24H IA
             </div>
 
-            <div class="ia-item">
-                Interpretación de esquemas
-            </div>
+            <h2>
+                Asistencia técnica inteligente
+            </h2>
 
-            <div class="ia-item">
-                Ayuda técnica paso a paso
-            </div>
+            <p>
+                Una nueva forma de afrontar los problemas técnicos.
+                Análisis de averías, orientación técnica, documentación,
+                esquemas y apoyo para encontrar soluciones de forma rápida
+                y ordenada.
+            </p>
 
-            <div class="ia-item">
-                Apoyo al mantenimiento
-            </div>
-
-            <div class="ia-item">
-                Electricidad y automatización
-            </div>
-
-            <div class="ia-item">
-                Mecánica, hidráulica y neumática
-            </div>
+            <a class="btn btn-primary"
+               href="https://wa.me/34604828147"
+               target="_blank">
+                Solicitar asistencia
+            </a>
 
         </div>
-
-        <a class="btn btn-primary"
-           href="https://wa.me/34604828147">
-            💬 Consultar por WhatsApp
-        </a>
 
     </div>
-
-</div>
-
 </section>
 
-<!-- CLIENTES -->
+<!-- COBERTURA -->
 
-<section class="clients">
+<section class="coverage">
+    <div class="container">
 
-<div class="container">
+        <div class="coverage-box">
 
-    <h2 class="section-title">
-        Trabajamos para <span>todos.</span>
-    </h2>
+            <div>
+                <h2 class="section-title">
+                    Cerca cuando <span>lo necesitas</span>
+                </h2>
 
-    <p class="section-subtitle">
-        Desde una incidencia puntual hasta el mantenimiento
-        técnico de una instalación.
-    </p>
+                <p class="section-subtitle">
+                    Atención para empresas, industrias, comercios,
+                    instalaciones y particulares.
+                </p>
+            </div>
 
-    <div class="client-grid">
+            <div class="coverage-card">
 
-        <div class="client">Empresas</div>
+                <h3>Castellón · Nacional</h3>
 
-        <div class="client">Industrias</div>
+                <p>
+                    Servicio con base en Castellón y capacidad de
+                    cobertura a nivel nacional.
+                </p>
 
-        <div class="client">Comercios</div>
+                <ul class="coverage-list">
+                    <li>Servicio técnico</li>
+                    <li>Mantenimiento</li>
+                    <li>Diagnóstico de averías</li>
+                    <li>Asistencia técnica</li>
+                </ul>
 
-        <div class="client">Instalaciones</div>
+            </div>
 
-        <div class="client">Particulares</div>
+        </div>
 
     </div>
-
-</div>
-
 </section>
 
 <!-- CONTACTO -->
 
 <section class="contact" id="contacto">
+    <div class="container">
 
-<div class="container">
+        <div class="contact-box">
 
-    <h2 class="section-title">
-        ¿Tienes un problema <span>técnico?</span>
-    </h2>
+            <h2>
+                ¿Necesitas <span>ayuda técnica?</span>
+            </h2>
 
-    <p class="section-subtitle">
-        Cuéntanos qué necesitas y encontraremos la mejor solución.
-    </p>
+            <p>
+                Contacta con SERVITEC24H y cuéntanos qué problema tienes.
+            </p>
 
-    <div class="contact-box">
+            <div class="buttons" style="justify-content:center;">
 
-        <div class="contact-card">
+                <a class="btn btn-primary"
+                   href="tel:+34604828147">
+                    Llamar ahora
+                </a>
 
-            <h3>Teléfono / WhatsApp</h3>
+                <a class="btn btn-secondary"
+                   href="https://wa.me/34604828147"
+                   target="_blank">
+                    WhatsApp
+                </a>
 
-            <a href="tel:+34604828147">
-                +34 604 82 81 47
-            </a>
+            </div>
 
-            <br><br>
+            <div class="contact-info">
 
-            <a href="https://wa.me/34604828147">
-                💬 Escribir por WhatsApp
-            </a>
+                <div class="contact-item">
+                    <strong>Teléfono</strong>
+                    +34 604 82 81 47
+                </div>
 
-        </div>
+                <div class="contact-item">
+                    <strong>Email</strong>
+                    servitec24h.industrial@gmail.com
+                </div>
 
-        <div class="contact-card">
-
-            <h3>Correo electrónico</h3>
-
-            <a href="mailto:servitec24h.industrial@gmail.com">
-                servitec24h.industrial@gmail.com
-            </a>
+            </div>
 
         </div>
 
     </div>
-
-</div>
-
 </section>
 
+</main>
+
 <footer>
+    <div class="container">
 
-    <strong>SERVITEC24H</strong><br>
+        <div class="footer-logo">
+            SERVITEC<span>24H</span>
+        </div>
 
-    Tus problemas técnicos. Nuestras soluciones.<br>
+        <p>
+            Servicio técnico · Mantenimiento · Asistencia inteligente
+        </p>
 
-    Servicio técnico · Mantenimiento · Asistencia inteligente<br><br>
+        <p style="margin-top:10px;">
+            Base en Castellón · Cobertura nacional
+        </p>
 
-    Base en Castellón · Cobertura nacional
-
+    </div>
 </footer>
 
 </body>
