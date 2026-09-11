@@ -1,392 +1,353 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>SERVITEC24H | Servicio Técnico y Mantenimiento Industrial</title>
+  <title>SERVITEC24H | Servicio Técnico y Mantenimiento 24 Horas</title>
 
-    <meta name="description" content="SERVITEC24H. Servicio técnico y mantenimiento industrial integral. Electricidad, automatización, electrónica, mecánica, neumática, hidráulica y fontanería.">
+  <meta name="description" content="SERVITEC24H. Servicio técnico y mantenimiento 24 horas para empresas, industrias, comercios, instalaciones y particulares. Base en Castellón y cobertura nacional.">
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            color: #172033;
-            background: #ffffff;
-            line-height: 1.6;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f4f6f8;
+      color: #172033;
+      line-height: 1.6;
+    }
 
-        header {
-            background: #0b1f3a;
-            color: white;
-            padding: 20px 6%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+    header {
+      background: #111827;
+      color: white;
+      padding: 20px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
 
-        .logo {
-            font-size: 26px;
-            font-weight: bold;
-        }
+    header h1 {
+      font-size: 28px;
+      letter-spacing: 1px;
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            font-size: 15px;
-        }
+    header a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        nav a:hover {
-            color: #43b7ff;
-        }
+    .hero {
+      background: linear-gradient(135deg, #172033, #26364d);
+      color: white;
+      padding: 90px 8%;
+      text-align: center;
+    }
 
-        .hero {
-            background: linear-gradient(135deg, #0b1f3a, #1261a0);
-            color: white;
-            padding: 110px 6%;
-            text-align: center;
-        }
+    .hero h2 {
+      font-size: 46px;
+      margin-bottom: 20px;
+    }
 
-        .hero h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
+    .hero p {
+      font-size: 21px;
+      max-width: 850px;
+      margin: 0 auto 30px;
+    }
 
-        .hero p {
-            font-size: 21px;
-            max-width: 750px;
-            margin: 0 auto 35px;
-        }
+    .location {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
 
-        .botones {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
 
-        .boton {
-            display: inline-block;
-            padding: 15px 25px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: bold;
-            background: white;
-            color: #0b1f3a;
-        }
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      background: #ffffff;
+      color: #172033;
+    }
 
-        .boton.ia {
-            background: #43b7ff;
-            color: white;
-        }
+    .button.secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+    }
 
-        section {
-            padding: 75px 6%;
-        }
+    section {
+      padding: 70px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
 
-        .titulo {
-            text-align: center;
-            font-size: 34px;
-            margin-bottom: 15px;
-            color: #0b1f3a;
-        }
+    section h2 {
+      text-align: center;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
 
-        .subtitulo {
-            text-align: center;
-            max-width: 750px;
-            margin: 0 auto 45px;
-            color: #596579;
-        }
+    .intro {
+      text-align: center;
+      max-width: 850px;
+      margin: 0 auto 40px;
+      font-size: 18px;
+    }
 
-        .servicios {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 20px;
-            max-width: 1100px;
-            margin: auto;
-        }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+    }
 
-        .servicio {
-            background: #f4f7fa;
-            padding: 28px 20px;
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid #e3e9ef;
-        }
+    .service {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+      text-align: center;
+      font-weight: bold;
+    }
 
-        .servicio h3 {
-            color: #0b1f3a;
-            margin-bottom: 8px;
-        }
+    .ia {
+      background: #e9eef5;
+      max-width: none;
+    }
 
-        .servicio p {
-            color: #657083;
-            font-size: 14px;
-        }
+    .ia-content {
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
 
-        .integral {
-            background: #eef5fa;
-            text-align: center;
-        }
+    .ia-box {
+      background: white;
+      padding: 35px;
+      border-radius: 14px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+      margin-top: 30px;
+    }
 
-        .integral p {
-            max-width: 800px;
-            margin: auto;
-            font-size: 21px;
-            color: #26364b;
-        }
+    .ia-box h3 {
+      font-size: 26px;
+      margin-bottom: 15px;
+    }
 
-        .ia {
-            background: #0b1f3a;
-            color: white;
-            text-align: center;
-        }
+    .contact {
+      background: #172033;
+      color: white;
+      max-width: none;
+      text-align: center;
+    }
 
-        .ia .titulo {
-            color: white;
-        }
+    .contact-content {
+      max-width: 850px;
+      margin: auto;
+    }
 
-        .ia .subtitulo {
-            color: #d5e2ef;
-        }
+    .contact a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .ia-contenido {
-            max-width: 850px;
-            margin: auto;
-        }
+    .contact-item {
+      margin: 14px 0;
+      font-size: 18px;
+    }
 
-        .ia-lista {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 18px;
-            margin-top: 35px;
-        }
+    .call-button {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 15px 28px;
+      background: white;
+      color: #172033 !important;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-        .ia-item {
-            border: 1px solid #31506e;
-            border-radius: 10px;
-            padding: 22px;
-        }
+    footer {
+      background: #0d1320;
+      color: #b9c0ca;
+      text-align: center;
+      padding: 25px;
+      font-size: 14px;
+    }
 
-        .contacto {
-            text-align: center;
-        }
+    @media (max-width: 700px) {
+      .hero h2 {
+        font-size: 34px;
+      }
 
-        .contacto-info {
-            max-width: 700px;
-            margin: auto;
-        }
+      .hero p {
+        font-size: 18px;
+      }
 
-        .contacto-info p {
-            margin: 12px 0;
-            font-size: 18px;
-        }
-
-        footer {
-            background: #071426;
-            color: #c7d2df;
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        @media (max-width: 700px) {
-            header {
-                flex-direction: column;
-                gap: 12px;
-            }
-
-            nav a {
-                margin: 0 7px;
-                font-size: 13px;
-            }
-
-            .hero h1 {
-                font-size: 36px;
-            }
-
-            .hero p {
-                font-size: 18px;
-            }
-        }
-    </style>
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-    <div class="logo">SERVITEC24H</div>
-
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#servicios">Servicios</a>
-        <a href="#ia">SERVITEC24H IA</a>
-        <a href="#contacto">Contacto</a>
-    </nav>
-</header>
-
-<section class="hero" id="inicio">
+  <header>
     <h1>SERVITEC24H</h1>
+    <a href="tel:+34604828147">📞 +34 604 82 81 47</a>
+  </header>
 
-    <p>
-        Servicio técnico 24 horas para tu industria.
-        Asistencia rápida y soluciones fiables.
-    </p>
+  <main>
 
-    <div class="botones">
-        <a class="boton" href="#contacto">Necesito servicio técnico</a>
-        <a class="boton ia" href="#ia">Conocer SERVITEC24H IA</a>
-    </div>
-</section>
+    <section class="hero">
+      <h2>Tu problema técnico, nuestra solución.</h2>
 
-<section id="servicios">
-    <h2 class="titulo">Mantenimiento industrial integral</h2>
+      <p>
+        Servicio técnico y mantenimiento 24 horas para empresas,
+        industrias, comercios, instalaciones y particulares.
+      </p>
 
-    <p class="subtitulo">
-        Soluciones profesionales para mantener tu industria funcionando
-        de forma segura, eficiente y fiable.
-    </p>
+      <div class="location">
+        📍 Base en Castellón · Cobertura nacional
+      </div>
 
-    <div class="servicios">
+      <div class="buttons">
+        <a class="button" href="tel:+34604828147">
+          Necesito servicio técnico
+        </a>
 
-        <div class="servicio">
-            <h3>⚡ Electricidad industrial</h3>
-            <p>Diagnóstico, reparación y mantenimiento de instalaciones eléctricas industriales.</p>
-        </div>
+        <a class="button secondary" href="#ia">
+          Conocer SERVITEC24H IA
+        </a>
+      </div>
+    </section>
 
-        <div class="servicio">
-            <h3>⚙️ Automatización</h3>
-            <p>Soluciones y mantenimiento de sistemas de automatización industrial.</p>
-        </div>
+    <section>
+      <h2>Nuestros servicios</h2>
 
-        <div class="servicio">
-            <h3>🔌 Electrónica</h3>
-            <p>Diagnóstico y reparación de equipos y sistemas electrónicos.</p>
-        </div>
+      <p class="intro">
+        Soluciones técnicas, mantenimiento y asistencia para diferentes
+        tipos de instalaciones, equipos y necesidades.
+      </p>
 
-        <div class="servicio">
-            <h3>🔧 Mecánica</h3>
-            <p>Mantenimiento y reparación de maquinaria y sistemas mecánicos.</p>
-        </div>
+      <div class="services">
 
-        <div class="servicio">
-            <h3>💨 Neumática</h3>
-            <p>Diagnóstico y mantenimiento de instalaciones y equipos neumáticos.</p>
-        </div>
+        <div class="service">⚡ Electricidad</div>
 
-        <div class="servicio">
-            <h3>💧 Hidráulica</h3>
-            <p>Reparación y mantenimiento de sistemas hidráulicos industriales.</p>
-        </div>
+        <div class="service">⚙️ Automatización</div>
 
-        <div class="servicio">
-            <h3>🚰 Fontanería</h3>
-            <p>Reparación y mantenimiento de instalaciones de agua y tuberías.</p>
-        </div>
+        <div class="service">🔌 Electrónica</div>
 
-        <div class="servicio">
-            <h3>🔗 Redes industriales</h3>
-            <p>Diagnóstico y mantenimiento de comunicaciones industriales.</p>
-        </div>
+        <div class="service">🔧 Mecánica</div>
 
-        <div class="servicio">
-            <h3>🛠️ Mantenimiento preventivo</h3>
-            <p>Prevención de averías y mantenimiento planificado de equipos.</p>
-        </div>
+        <div class="service">💨 Neumática</div>
 
-        <div class="servicio">
-            <h3>🚨 Mantenimiento correctivo</h3>
-            <p>Respuesta ante averías y reparación para recuperar la producción.</p>
-        </div>
+        <div class="service">💧 Hidráulica</div>
 
-    </div>
-</section>
+        <div class="service">🚰 Fontanería</div>
 
-<section class="integral">
-    <h2 class="titulo">Un solo servicio para tu industria</h2>
+        <div class="service">🌐 Redes industriales</div>
 
-    <p>
-        SERVITEC24H ofrece mantenimiento industrial integral
-        para ayudarte a mantener tus instalaciones y maquinaria
-        en funcionamiento.
-    </p>
-</section>
+        <div class="service">🛠️ Mantenimiento preventivo</div>
 
-<section class="ia" id="ia">
+        <div class="service">🚨 Mantenimiento correctivo</div>
 
-    <div class="ia-contenido">
+      </div>
+    </section>
 
-        <h2 class="titulo">SERVITEC24H IA</h2>
+    <section id="ia" class="ia">
+      <div class="ia-content">
 
-        <p class="subtitulo">
-            Asistencia inteligente para el mantenimiento industrial.
-            Una nueva herramienta para ayudar a los profesionales
-            a diagnosticar y resolver averías.
+        <h2>🤖 SERVITEC24H IA</h2>
+
+        <p class="intro">
+          Tu asistente técnico inteligente para ayudarte a entender,
+          analizar y orientar problemas técnicos.
         </p>
 
-        <div class="ia-lista">
+        <div class="ia-box">
 
-            <div class="ia-item">
-                <h3>Diagnóstico guiado</h3>
-                <p>Ayuda paso a paso para analizar una avería.</p>
-            </div>
+          <h3>Asistencia técnica inteligente</h3>
 
-            <div class="ia-item">
-                <h3>Análisis técnico</h3>
-                <p>Apoyo para interpretar síntomas y posibles causas.</p>
-            </div>
+          <p>
+            SERVITEC24H IA está pensado para todo tipo de clientes y
+            servicios. Puede ayudarte a analizar averías, interpretar
+            esquemas y documentación técnica, identificar posibles causas
+            de un problema y orientar los siguientes pasos.
+          </p>
 
-            <div class="ia-item">
-                <h3>Esquemas técnicos</h3>
-                <p>Asistencia para trabajar con documentación y esquemas.</p>
-            </div>
-
-            <div class="ia-item">
-                <h3>Soporte al técnico</h3>
-                <p>Una herramienta inteligente disponible cuando la necesites.</p>
-            </div>
+          <p style="margin-top: 15px;">
+            Una nueva forma de acceder a asistencia técnica cuando
+            necesitas una orientación rápida.
+          </p>
 
         </div>
 
-    </div>
+      </div>
+    </section>
 
-</section>
+    <section>
+      <h2>Un solo servicio técnico. Todas tus necesidades.</h2>
 
-<section class="contacto" id="contacto">
+      <p class="intro">
+        Desde una intervención técnica hasta el mantenimiento de una
+        instalación completa. SERVITEC24H busca ofrecer una solución
+        práctica, profesional y adaptada a cada cliente.
+      </p>
+    </section>
 
-    <h2 class="titulo">Contacto</h2>
+    <section class="contact">
+      <div class="contact-content">
 
-    <p class="subtitulo">
-        ¿Necesitas asistencia para tu instalación o maquinaria?
-        Ponte en contacto con SERVITEC24H.
-    </p>
+        <h2>Contacta con SERVITEC24H</h2>
 
-    <div class="contacto-info">
+        <p class="contact-item">
+          📞
+          <a href="tel:+34604828147">
+            +34 604 82 81 47
+          </a>
+        </p>
 
-        <p><strong>Servicio técnico y mantenimiento industrial</strong></p>
+        <p class="contact-item">
+          ✉️
+          <a href="mailto:servitec24h.industrial@gmail.com">
+            servitec24h.industrial@gmail.com
+          </a>
+        </p>
 
-        <p>📞 Teléfono: Próximamente</p>
+        <p class="contact-item">
+          📍 Base en Castellón · Cobertura nacional
+        </p>
 
-        <p>✉️ Email: Próximamente</p>
+        <a class="call-button" href="tel:+34604828147">
+          Llamar ahora
+        </a>
 
-        <p>📍 Servicio industrial</p>
+      </div>
+    </section>
 
-    </div>
+  </main>
 
-</section>
-
-<footer>
-    <p>© 2026 SERVITEC24H — Servicio técnico y mantenimiento industrial</p>
-</footer>
+  <footer>
+    © 2026 SERVITEC24H · Servicio técnico y mantenimiento 24 horas
+  </footer>
 
 </body>
 </html>
